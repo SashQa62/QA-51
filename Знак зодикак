@@ -1,0 +1,32 @@
+day = int(input("День: "))
+month = input("Месяц: ")
+
+if month == "март":
+    z = "Рыбы" if day <= 20 else "Овен"
+elif month == "апрель":
+    z = "Овен" if day <= 20 else "Телец"
+elif month == "май":
+    z = "Телец" if day <= 20 else "Близнецы" 
+elif month == "июнь":
+    z = "Близнецы" if day <= 21 else "Рак"
+elif month == "июль":
+    z = "Рак" if day <= 22 else "Лев"
+elif month == "август":
+    z = "Лев" if day <= 23 else "Дева"
+elif month == "сентябрь":
+    z = "Дева" if day <= 23 else "Весы"
+elif month == "октябрь":
+    z = "Весы" if day <= 23 else "Скорпион"
+elif month == "ноябрь":
+    z = "Скорпион" if day <= 23 else "Стрелец"
+elif month == "декабрь":
+    z = "Стрелец" if day <= 21 else "Козерог"
+elif month == "январь":
+    z = "Козерог" if day <= 20 else "Водолей"
+elif month == "февраль":
+    z = "Водолей" if day <= 20 else "Рыбы"
+elif month == "февраль":
+    z = "Рыбы" if day <= 20 else "Овен"
+else:
+    z = "Не знаю!"
+print(z)
