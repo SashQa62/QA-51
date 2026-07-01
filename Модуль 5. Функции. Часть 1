@@ -1,0 +1,62 @@
+def Bill_Gates():
+    print('"Don\'t compare yourself with anyone in this world…')
+    print('if you do so, you are insulting yourself."')
+    print('Bill Gates')
+Bill_Gates()
+
+def chet(a, b):
+    if a > b:
+        a, b = b, a
+    for num in range(a, b + 1):
+        if num % 2 == 0:
+            print(num, end=' ')
+chet(5, 10)
+
+
+def square(a, b, c):
+    print(b * a)
+    for _ in range(a - 2):
+        if c:
+            print(b * a)
+        else:
+            print(b + ' ' * (a - 2) + b)
+    print(b * a)
+square(5, '*', True)
+square(5, '-', False)
+
+
+def minimum(a, b, c, d, e):
+    return min(a, b, c, d, e)
+result = minimum(1, 2, 3, 4, 5)
+print(result)
+
+
+def product(a, b):
+    l, r = sorted([a, b])
+    if l > r:
+        return 1
+    if l == r:
+        return l
+    result = 1
+    for num in range(l, r + 1):
+        result *= num
+    return result
+print(product(1, 5))
+print(product(5, 1))
+print(product(10, 10))
+print(product(15, 14))
+
+
+def count(number):
+    return len(str(abs(number)))
+print(count(3456))
+print(count(-123))
+print(count(0))
+
+
+def is_palindrome(number):
+    return str(abs(number)) == str(abs(number))[::-1]
+print(is_palindrome(123321))
+print(is_palindrome(546645))
+print(is_palindrome(421987))
+print(is_palindrome(-121))
