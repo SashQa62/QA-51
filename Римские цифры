@@ -2,7 +2,7 @@ def Rimskiy(a):
     rimskiy = {'I': 1, 'V': 5, 'X': 10}
     nums = 0
     for b in range(len(a)):
-        if b + 1 < len(a) and rimskiy[a[b]] < rimskiy[a[b + 1]]: # Эту стро подсмотрел. :-)
+        if b + 1 < len(a) and rimskiy[a[b]] < rimskiy[a[b + 1]]: # Эту строку подсмотрел. :-)
             nums -= rimskiy[a[b]]
         else:
             nums += rimskiy[a[b]]
