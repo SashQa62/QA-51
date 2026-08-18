@@ -2,7 +2,7 @@ import telebot
 import time
 from datetime import datetime, timedelta
 
-TOKEN = "8860493827:AAFQInnXBJcVeCRhQYBb8gRxthIVseDwOds"
+TOKEN = "ТОКЕН"
 bot = telebot.TeleBot(TOKEN)
 
 user_reminders = {}
